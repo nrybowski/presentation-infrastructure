@@ -24,7 +24,7 @@
         <div class="slides">
             <section>
                 <h3>
-                    Présentation de l'infrastructure étudiante
+                    Présentation de l'infrastructure étudiante en INGI
                 </h3>
                 <div style="display:flex;flex-direction: row;justify-content: space-between">
                     <div>
@@ -36,36 +36,41 @@
                 </div>
             </section>
             <section>
-                <h3>Les salles informatiques</h3>
-                <br>
+                <h2>Quelles motivations ?</h2>
                 <ul>
+                    <li class="fragment">Infrastructure vaste et peu connue</li>
+                    <li class="fragment">Nouveau matériel installé cet été</li>
+                </ul>
+            </section>
+            <section style="height: 100%">
+                <h2>Une source d'information</h2>
+                <a href="https://wiki.student.info.ucl.ac.be">wiki.student.info.ucl.ac.be</a>
+                <iframe style="height: 70%;width: 100%" src="https://wiki.student.info.ucl.ac.be/"></iframe>
+            </section>
+            <section>
+                <h2>Règles d'utilisation</h2>
+                <ul>
+                    <li class="fragment">L'utilisation des salles est soumise à <a href="https://wiki.student.info.ucl.ac.be/Informations/R%c3%a8glement" target="_blank">un réglement</a></li>
+                    <li class="fragment">Pour les étudiants INGI</li>
+                    <li class="fragment">Dans le cadre de vos études</li>
+                    <li class="fragment">Interdiction de manger ou fumer</li>
+                    <li class="fragment">Pas d'installation de logiciel sans notre accord</li>
+                    <li class="fragment">Pas d'activité illégale</li>
                     <li class="fragment">
-                        La salle <b>Intel</b> :
-                        <ul>
-                            <li>18 DELL (ordinateurs fixes), des personnages</li>
-                            <li>6 NUCS, des planetes</li>
-                        </ul>
+                        L'accès à Internet est soumis à <a href="https://www.uclouvain.be/91034.html" target="_blank">la charte UCL</a>
+                        et à <a href="https://www.belnet.be/fr/content/politique-dutilisation-acceptable-aup-des-services-dinternet-de-belnet" target="_blank">la
+                        politique d'utilisation acceptable de Belnet</a>
                     </li>
-                    <li class="fragment">
-                        La salle <b>Siemens</b> :
-                        <ul>
-                            <li>9 NUCS</li>
-                            <li>8 écrans libres</li>
-                        </ul>
-                    </li>
-                    <li class="fragment">
-                        La salle <b>Bill Joy</b> :
-                        <ul>
-                            <li>4 NUCS</li>
-                            <li>2 écrans libres</li>
-                        </ul>
-                    </li>
+                    <li class="fragment">Interdiction de débrancher du matériel</li>
+                    <li class="fragment">Interdiction de déplacer du matériel</li>
+                    <li class="fragment">Interdiction d'éteindre ou redémarrer du matériel</li>
                 </ul>
             </section>
             <section style="height:100%">
+                <h2>Le nouveau matériel</h2>
                 <div class="flex-container">
-                    <div style="width: 48%; height:100%">
-                        <h3>Dell</h3>
+                    <div class="fragment" style="width: 48%; height:100%">
+                        <h6>Tour Dell</h6>
                         <img style="height:40%" src="images/dell.jpg">
                         <ul style="height: 60%">
                             <li>
@@ -74,13 +79,10 @@
                             <li>
                                 16Go de RAM
                             </li>
-                            <li>
-                                Utilisables à distance en SSH
-                            </li>
                         </ul>
                     </div>
                     <div class="fragment" style="width: 48%; height:100%">
-                        <h3>NUC</h3>
+                        <h6>NUC</h6>
                         <img style="height:40%" src="images/nuc.jpg">
                         <ul style="height: 60%">
                             <li>
@@ -89,24 +91,82 @@
                             <li>
                                 Petits systèmes légers, connectés au serveur Jabba, qui leur envoie l'image du bureau.
                             </li>
-                            <li>
-                                Vous pouvez quand même vous y connecter en SSH
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section style="height: 100%;">
+                <h2>Les salles informatiques</h2>
+                <div class="flex-container">
+                    <div style="width: 48%; height:100%">
+                        <img src="images/plan%20salles%20ingi.svg" style="max-height: 70%">
+                    </div>
+                    <div style="width: 48%; height:100%">
+                        <ul>
+                            <li class="fragment">
+                                La salle <b>Intel</b>
+                                <ul>
+                                    <li>18 tours Dell</li>
+                                    <li>6 NUCs</li>
+                                </ul>
+                            </li>
+                            <li class="fragment">
+                                La salle <b>Siemens</b>
+                                <ul>
+                                    <li>9 NUCs</li>
+                                    <li>8 écrans libres</li>
+                                </ul>
+                            </li>
+                            <li class="fragment">
+                                La salle <b>Bill Joy</b>
+                                <ul>
+                                    <li>4 NUCs</li>
+                                    <li>2 écrans libres</li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section style="height: 100%">
-                <h3>
-                    La liste des machines
-                </h3>
-                <div style="width: 100%; height:100%; display: flex; flex-direction: column; justify-content: flex-start">
-                    <div style="height: 20%">
-                        La liste des machines et leurs noms est consultable sur le wiki étudiant :
-                        <a href="https://wiki.student.info.ucl.ac.be/Matériel/Matériel">https://wiki.student.info.ucl.ac.be/Matériel/Matériel</a>
-                    </div>
-                    <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Matériel/Matériel"></iframe>
-                </div>
+                <h2>La liste des machines</h2>
+                La liste des machines est consultable sur
+                <a href="https://wiki.student.info.ucl.ac.be/Matériel/Matériel">le wiki étudiant</a>
+                <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Matériel/Matériel"></iframe>
+            </section>
+            <section>
+                <h2>OS et logiciels</h2>
+                <ul>
+                    <li class="fragment">CentOS 7, kernel 4.6</li>
+                    <li class="fragment">Bureau MATE</li>
+                    <li class="fragment">Tout les logiciels nécessaires pour vos cours</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Stockage de données</h2>
+                <ul>
+                    <li class="fragment">Vous disposez d'un répertoire personnel privé, disponible simultanément sur chaque machine.</li>
+                    <li class="fragment">Il est soumis à des limites de quota.
+                        <ul>
+                            <li class="fragment">Limite soft à xx Go</li>
+                            <li class="fragment">Limite hard à xx Go</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Pour les fichiers temporaires, le répertoire <code><b>/storage</b></code> vous est accessible.</li>
+                    <li class="fragment">Il est public, local et non persistent.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Utiliser les machines</h2>
+                <ul>
+                    <li class="fragment">Physiquement, avec votre login INGI</li>
+                    <li class="fragment">A distance, avec votre clé SSH INGI
+                        <ul>
+                            <li class="fragment">en ligne de commande via un terminal</li>
+                            <li class="fragment">graphiquement via un X2Go</li>
+                        </ul>
+                    </li>
+                </ul>
             </section>
             <section>
                 <h3>
