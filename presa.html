@@ -11,6 +11,12 @@
             height:100%;
             justify-content: space-between;
         }
+        .flex-container-top-down {
+            display: flex;
+            flex-direction: column;
+            height:100vh;
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
@@ -100,6 +106,90 @@
                         <a href="https://wiki.student.info.ucl.ac.be/Matériel/Matériel">https://wiki.student.info.ucl.ac.be/Matériel/Matériel</a>
                     </div>
                     <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Matériel/Matériel"></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>
+                    Se connecter aux machines
+                </h3>
+                Vous pouvez vous connecter en utilisant ssh.
+                Connexion de l'extérieur vers studssh :
+                <br>
+                <br>
+                <small>
+                    <code data-trim data-noescape>
+                        <b>ssh identifiant_ucl@studssh.info.ucl.ac.be</b>
+                    </code>
+                </small>
+                <br>
+                Connexion depuis studssh vers une machine de l'infrastructure :
+                <br>
+                <br>
+                <small>
+                    <code data-trim data-noescape>
+                        <b>ssh identifiant_ucl@nom_de_la_machine.info.ucl.ac.be</b>
+                    </code>
+                 </small>
+                <br>
+                exemple :
+                <br>
+                <br>
+                <small>
+                    <code data-trim data-noescape>
+                        <b>ssh identifiant_ucl@skywaker.info.ucl.ac.be</b>
+                    </code>
+                </small>
+            </section>
+            <section>
+                <div class="flex-container-top-down">
+                    <div style="height:25%">
+                        <h3>
+                            Se connecter aux machines
+                        </h3>
+                        Vous pouvez aussi utiliser X2go pour vous connecter graphiquement aux machines.
+                    </div>
+                    <div style="height:75%">
+                        <img style="height:100%" src="images/x2go.png">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex-container-top-down">
+                    <div style="height:35%">
+                        <h3>
+                            Se connecter aux machines
+                        </h3>
+                        Une fois encore, un tutoriel pour l'utilisation de X2go est disponible sur le wiki étudiant (<a href="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant">https://wiki.student.info.ucl.ac.be/Informations/BureauDistant</a>)
+                    </div>
+                    <iframe style="height: 65%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant"></iframe>
+                </div>
+            </section>
+            <section>
+                <h3>
+                    SSH
+                </h3>
+                Pour se connecter aux machines, graphiquement ou non :
+                <ul>
+                    <li>
+                        Générer une paire de clés SSH (privée + publique)
+                    </li>
+                    <li>
+                        Les placer dans le dossier .ssh de votre home sur votre ordinateur
+                    </li>
+                    <li>
+                        Les placer dans le dossier .ssh de votre home sur les machines des salles (le faire sur une seule machine suffit)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="flex-container-top-down">
+                    <div style="height:35%">
+                        <h3>
+                            SSH
+                        </h3>
+                        Un tutoriel pour la génération des clés ainsi que eur utilisation est disponible sur le wiki étudiant (<a href="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse">https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse</a>)
+                    </div>
+                    <iframe style="height: 65%; width: 100%" src="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse"></iframe>
                 </div>
             </section>
         </div>
