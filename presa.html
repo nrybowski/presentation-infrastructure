@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            height:100%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3>
+                    Présentation de l'infrastructure étudiante
+                </h3>
+                <div style="display:flex;flex-direction: row;justify-content: space-between">
+                    <div>
+                        <small>François Michel</small>
+                    </div>
+                    <div>
+                        <small>Maxime Piraux</small>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Les salles informatiques</h3>
+                <br>
+                <ul>
+                    <li class="fragment">
+                        La salle <b>Intel</b> :
+                        <ul>
+                            <li>18 DELL (ordinateurs fixes), des personnages</li>
+                            <li>6 NUCS, des planetes</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        La salle <b>Siemens</b> :
+                        <ul>
+                            <li>9 NUCS</li>
+                            <li>8 écrans libres</li>
+                        </ul>
+                    </li>
+                    <li class="fragment">
+                        La salle <b>Bill Joy</b> :
+                        <ul>
+                            <li>4 NUCS</li>
+                            <li>2 écrans libres</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section style="height:100%">
+                <div class="flex-container">
+                    <div style="width: 48%; height:100%">
+                        <h3>Dell</h3>
+                        <img style="height:40%" src="images/dell.jpg">
+                        <ul style="height: 60%">
+                            <li>
+                                Intel(R) Core(TM) i7 6700 @ 3.4GHz, 4 coeurs physiques
+                            </li>
+                            <li>
+                                16Go de RAM
+                            </li>
+                            <li>
+                                Utilisables à distance en SSH
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fragment" style="width: 48%; height:100%">
+                        <h3>NUC</h3>
+                        <img style="height:40%" src="images/nuc.jpg">
+                        <ul style="height: 60%">
+                            <li>
+                                Intel(R) NUC
+                            </li>
+                            <li>
+                                Petits systèmes légers, connectés au serveur Jabba, qui leur envoie l'image du bureau.
+                            </li>
+                            <li>
+                                Vous pouvez quand même vous y connecter en SSH
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section style="height: 100%">
+                <h3>
+                    La liste des machines
+                </h3>
+                <div style="width: 100%; height:100%; display: flex; flex-direction: column; justify-content: flex-start">
+                    <div style="height: 20%">
+                        La liste des machines et leurs noms est consultable sur le wiki étudiant :
+                        <a href="https://wiki.student.info.ucl.ac.be/Matériel/Matériel">https://wiki.student.info.ucl.ac.be/Matériel/Matériel</a>
+                    </div>
+                    <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Matériel/Matériel"></iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({width:1024,
+                           height: 768});
+    </script>
+</body>
+</html>
