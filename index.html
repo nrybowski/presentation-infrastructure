@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/zenburn.css">
     <style>
         .flex-container {
             display: flex;
@@ -16,6 +17,9 @@
             flex-direction: column;
             height:100vh;
             justify-content: space-around;
+        }
+        .reveal li small {
+          margin-top: 10px;
         }
     </style>
 </head>
@@ -53,7 +57,7 @@
                     <li class="fragment">L'utilisation des salles est soumise à <a href="https://wiki.student.info.ucl.ac.be/Informations/R%c3%a8glement" target="_blank">un réglement</a></li>
                     <li class="fragment">Pour les étudiants INGI</li>
                     <li class="fragment">Dans le cadre de vos études</li>
-                    <li class="fragment">Interdiction de manger ou fumer</li>
+                    <li class="fragment">Interdiction de manger, boire ou fumer</li>
                     <li class="fragment">Pas d'installation de logiciel sans notre accord</li>
                     <li class="fragment">Pas d'activité illégale</li>
                     <li class="fragment">
@@ -79,6 +83,9 @@
                             <li>
                                 16Go de RAM
                             </li>
+                            <li>
+                                SSD
+                            </li>
                         </ul>
                     </div>
                     <div class="fragment" style="width: 48%; height:100%">
@@ -89,7 +96,7 @@
                                 Intel(R) NUC
                             </li>
                             <li>
-                                Petits systèmes légers, connectés au serveur Jabba, qui leur envoie l'image du bureau.
+                                Clients légers, terminaux du serveur Permeke.
                             </li>
                         </ul>
                     </div>
@@ -122,6 +129,7 @@
                                 <ul>
                                     <li>4 NUCs</li>
                                     <li>2 écrans libres</li>
+                                    <li>Imprimante StudLP</li>
                                 </ul>
                             </li>
                         </ul>
@@ -148,8 +156,8 @@
                     <li class="fragment">Vous disposez d'un répertoire personnel privé, disponible simultanément sur chaque machine.</li>
                     <li class="fragment">Il est soumis à des limites de quota.
                         <ul>
-                            <li class="fragment">Limite soft à xx Go</li>
-                            <li class="fragment">Limite hard à xx Go</li>
+                            <li class="fragment">Limite soft à 10 Go</li>
+                            <li class="fragment">Limite hard à 10 Go</li> <!-- Demander confirmation de P. Reinbold -->
                         </ul>
                     </li>
                     <li class="fragment">Pour les fichiers temporaires, le répertoire <code><b>/storage</b></code> vous est accessible.</li>
@@ -169,95 +177,79 @@
                 </ul>
             </section>
             <section>
+              <h3>
+                  Changer son mot de passe INGI
+              </h3>
+              <code class="fragment"><b>passwd</b></code>
+            </section>
+            <section style="height:100%">
                 <h3>
-                    Se connecter aux machines
+                    Clé SSH INGI
                 </h3>
-                Vous pouvez vous connecter en utilisant ssh.
-                Connexion de l'extérieur vers studssh :
-                <br>
-                <br>
-                <small>
-                    <code data-trim data-noescape>
-                        <b>ssh identifiant_ucl@studssh.info.ucl.ac.be</b>
-                    </code>
-                </small>
-                <br>
-                Connexion depuis studssh vers une machine de l'infrastructure :
-                <br>
-                <br>
-                <small>
-                    <code data-trim data-noescape>
-                        <b>ssh identifiant_ucl@nom_de_la_machine.info.ucl.ac.be</b>
-                    </code>
-                 </small>
-                <br>
-                exemple :
-                <br>
-                <br>
-                <small>
-                    <code data-trim data-noescape>
-                        <b>ssh identifiant_ucl@skywaker.info.ucl.ac.be</b>
-                    </code>
-                </small>
-            </section>
-            <section>
-                <div class="flex-container-top-down">
-                    <div style="height:25%">
-                        <h3>
-                            Se connecter aux machines
-                        </h3>
-                        Vous pouvez aussi utiliser X2go pour vous connecter graphiquement aux machines.
-                    </div>
-                    <div style="height:75%">
-                        <img style="height:100%" src="images/x2go.png">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="flex-container-top-down">
-                    <div style="height:35%">
-                        <h3>
-                            Se connecter aux machines
-                        </h3>
-                        Une fois encore, un tutoriel pour l'utilisation de X2go est disponible sur le wiki étudiant (<a href="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant">https://wiki.student.info.ucl.ac.be/Informations/BureauDistant</a>)
-                    </div>
-                    <iframe style="height: 65%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant"></iframe>
-                </div>
+                Un tutoriel pour la génération des clés est disponible sur <a href="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse">le wiki étudiant</a>
+                <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse"></iframe>
             </section>
             <section>
                 <h3>
-                    SSH
+                    Connexion en ligne de commande
                 </h3>
-                Pour se connecter aux machines, graphiquement ou non :
                 <ul>
-                    <li>
-                        Générer une paire de clés SSH (privée + publique)
-                    </li>
-                    <li>
-                        Les placer dans le dossier .ssh de votre home sur votre ordinateur
-                    </li>
-                    <li>
-                        Les placer dans le dossier .ssh de votre home sur les machines des salles (le faire sur une seule machine suffit)
-                    </li>
+                  <li class="fragment">Vous pouvez vous connecter en utilisant <code><b>ssh</b></code></li>
+                  <li class="fragment">
+                    Connexion de l'extérieur vers studssh:
+                    <ul><li>
+                      <small>
+                        <code data-noescape>
+                            <b>ssh identifiant_ingi@studssh.info.ucl.ac.be</b>
+                        </code>
+                      </small>
+                    </li></ul>
+                  </li>
+                  <li class="fragment">
+                    Connexion depuis studssh vers une machine de l'infrastructure:
+                    <ul>
+                      <li>
+                        <small>
+                          <code data-noescape>
+                              <b>ssh identifiant_ingi@nom_de_la_machine.info.ucl.ac.be</b>
+                          </code>
+                        </small>
+                      </li>
+                      <li>
+                        Exemple: <small style="margin-top: 16px">
+                          <code data-trim data-noescape>
+                              <b>ssh michelfra@skywalker.info.ucl.ac.be</b>
+                          </code>
+                        </small>
+                    </ul>
+                  </li>
                 </ul>
             </section>
-            <section>
-                <div class="flex-container-top-down">
-                    <div style="height:35%">
-                        <h3>
-                            SSH
-                        </h3>
-                        Un tutoriel pour la génération des clés ainsi que eur utilisation est disponible sur le wiki étudiant (<a href="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse">https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse</a>)
-                    </div>
-                    <iframe style="height: 65%; width: 100%" src="https://wiki.student.info.ucl.ac.be/News/FinDeLauthentificationParMotDePasse"></iframe>
+            <section style="height: 100%">
+                <h3>
+                    Connexion graphique aux machines
+                </h3>
+                Vous pouvez aussi utiliser X2go pour vous connecter graphiquement aux machines.
+                <div style="height:75%">
+                    <img style="height:100%" src="images/x2go.png">
                 </div>
+            </section>
+            <section style="height:100%">
+                <h3>
+                    Connexion graphique aux machines
+                </h3>
+                Un tutoriel pour l'utilisation de X2go est disponible sur <a href="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant">le wiki étudiant</a>
+                <iframe style="height: 70%; width: 100%" src="https://wiki.student.info.ucl.ac.be/Informations/BureauDistant"></iframe>
             </section>
         </div>
     </div>
     <script src="js/reveal.js"></script>
+    <script src="js/head.min.js"></script>
     <script>
-        Reveal.initialize({width:1024,
-                           height: 768});
+        Reveal.initialize({ width:1024,
+                            height: 768,
+                            dependencies: [{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+                          });
     </script>
 </body>
 </html>
