@@ -159,7 +159,7 @@
             <section>
                 <h2>OS et logiciels</h2>
                 <ul>
-                    <li class="fragment">CentOS 7, kernel 4.4</li>
+                    <li>CentOS 7, kernel 4.14.11</li>
                     <li class="fragment">Bureau MATE</li>
                     <li class="fragment">Tout les logiciels nécessaires pour vos cours</li>
                 </ul>
@@ -167,16 +167,25 @@
             <section>
                 <h2>Stockage de données</h2>
                 <ul>
-                    <li class="fragment">Vous disposez d'un répertoire personnel privé, disponible simultanément sur chaque machine.</li>
+                    <li>Vous disposez d'un répertoire personnel privé, disponible simultanément sur chaque machine.</li>
                     <li class="fragment">Il est soumis à des limites de quota.
                         <ul>
-                            <li class="fragment">Limite soft à 10 Go</li>
-                            <li class="fragment">Limite hard à 10 Go</li> <!-- Demander confirmation de P. Reinbold -->
+                            <li class="fragment">Limite soft à 15 Go</li>
+                            <li class="fragment">Limite hard à 18 Go</li>
+                            <li class="fragment">Consultable grâce à <code><b>quota -s</b></code> sur <code><b>jabba</b></code></li>
                         </ul>
                     </li>
                     <li class="fragment">Pour les fichiers temporaires, le répertoire <code><b>/storage</b></code> vous est accessible.</li>
                     <li class="fragment">Il est public, local et non persistent.</li>
                 </ul>
+            </section>
+            <section>
+              <h2>Stockage de données</h2>
+              <ul>
+                  <li>Votre répertoire personnel INGI est indépendant du répertoire personnel UCL (Oasis).</li>
+                  <li>Vous pouvez monter le répertoire Oasis avec un raccourci sur le bureau.</li>
+              </ul>
+              <img src="images/oasis.png">
             </section>
             <section>
                 <h2>Utiliser les machines</h2>
@@ -257,28 +266,14 @@
             </section>
             <section>
                 <h3>
-                    Exécuter des tâches de calculs lourdes
+                    Exécuter des tâches de calculs lourds
                 </h3>
                 <ul>
-                    <li>Toutes les machines des salles font parties du pool de calcul INGI</li>
-                    <li>Le pool gère pour vous la répartition de vos tâches sur les machines</li>
+                    <li>Toutes les machines des salles font parties du grid de calcul INGI</li>
+                    <li>Le grid gère pour vous la répartition de vos tâches sur les machines</li>
                     <li class="fragment">Vous pouvez soummettre vos tâches via <code><b>studssh</b></code></li>
+                    <li class="fragment">Des machines haute-disponibilitées sont aussi disponible (<a href>H.A.Grid</a>)</li>
                     <li class="fragment">Un tutoriel est disponible <a href="https://wiki.student.info.ucl.ac.be/Documentation/Condor" target="_blank">sur le wiki</a></li>
-                </ul>
-
-            </section>
-            <section>
-                <h3>
-                    Machine Virtuelle
-                </h3>
-                <ul>
-                    <li>
-                        Nous mettons à votre disposition une machine virtuelle VirtualBox fort semblable aux machines Dell de la salle Intel.
-                        <ul>
-                            <li>Le zip contenant le .ova pour VirtualBox est téléchargeable sur <a href="http://studmanager.info.ucl.ac.be/repo/repo-INGI/sinf1252/sinf1252_machine_intel.zip">ce lien</a> (1.9Go)</li>
-                            <li>Pour les curieux, nous mettons à disposition sur <a href="http://studmanager.info.ucl.ac.be/repo/repo-INGI/sinf1252/sinf1252_vagrant.zip">ce lien</a> l'archive contenant une configuration Vagrant qui a été utilisée pour créer automatiquement la machine virtuelle (200Mo). Si vous créez la machine avec Vagrant, pas besoin de télécharger le fichier .ova ci-dessus.</li>
-                        </ul>
-                    </li>
                 </ul>
             </section>
             <section>
